@@ -80,15 +80,15 @@ $micro-space: 0.750rem;
 $nano-space: $micro-space / 2;
 
 // Fonts
-$font: "open_sansregular";
-$font-italic: "open_sansitalic";
-$font-light: "open_sanslight";
-$font-bold: "open_sansbold";
-$font-bold-italic: "open_sansbold_italic";
-$heading: "semplicitaprobold";
-$heading-alt: "semplicitapromedium";
-$heading-tert: "semplicitaprolight";
-$font-stack: $font, $font-light, Helvetica, Arial, sans-serif;
+$font: "GalanoGrotesqueAlt-Medium";
+$font-italic: "GalanoGrotesqueAlt-MediumItalic";
+// $font-light: "open_sanslight";
+$font-bold: "GalanoGrotesqueAlt-ExtraBold";
+$font-bold-italic: "GalanoGrotesqueAlt-ExtraBoldItalic";
+$heading: "GalanoGrotesqueAlt-Black";
+$heading-italic: "GalanoGrotesqueAlt-BlackItalic";
+$heading-alt: "ONRAMP";
+$font-stack: $font, Helvetica, Arial, sans-serif;
 $social: "SSSocialRegular";
 
 // Misc

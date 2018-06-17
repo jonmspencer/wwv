@@ -1,173 +1,62 @@
-// Semplicita Pro
+// Galano
 @font-face {
-  font-family: 'semplicitaprobold';
-  src: url('assets/fonts/semplicitapro-bold-webfont.woff2') format('woff2'),
-       url('assets/fonts/semplicitapro-bold-webfont.woff') format('woff');
-  font-weight: normal;
+  font-family: 'GalanoGrotesqueAlt-Black';
+  src: url('assets/fonts/GalanoGrotesqueAlt-Black.woff2') format('woff2'),
+      url('assets/fonts/GalanoGrotesqueAlt-Black.woff') format('woff');
+  font-weight: 900;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'semplicitaprobolditalic';
-  src: url('assets/fonts/semplicitapro-bolditalic-webfont.woff2') format('woff2'),
-       url('assets/fonts/semplicitapro-bolditalic-webfont.woff') format('woff');
-  font-weight: normal;
+  font-family: 'GalanoGrotesqueAlt-MediumItalic';
+  src: url('assets/fonts/GalanoGrotesqueAlt-MediumItalic.woff2') format('woff2'),
+      url('assets/fonts/GalanoGrotesqueAlt-MediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'GalanoGrotesqueAlt-Medium';
+  src: url('assets/fonts/GalanoGrotesqueAlt-Medium.woff2') format('woff2'),
+      url('assets/fonts/GalanoGrotesqueAlt-Medium.woff') format('woff');
+  font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'semplicitaproitalic';
-  src: url('assets/fonts/semplicitapro-italic-webfont.woff2') format('woff2'),
-       url('assets/fonts/semplicitapro-italic-webfont.woff') format('woff');
-  font-weight: normal;
+  font-family: 'GalanoGrotesqueAlt-ExtraBold';
+  src: url('assets/fonts/GalanoGrotesqueAlt-ExtraBold.woff2') format('woff2'),
+      url('assets/fonts/GalanoGrotesqueAlt-ExtraBold.woff') format('woff');
+  font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'semplicitaprolight';
-  src: url('assets/fonts/semplicitapro-light-webfont.woff2') format('woff2'),
-       url('assets/fonts/semplicitapro-light-webfont.woff') format('woff');
+  font-family: 'GalanoGrotesqueAlt-ExtraBoldItalic';
+  src: url('assets/fonts/GalanoGrotesqueAlt-ExtraBoldItalic.woff2') format('woff2'),
+      url('assets/fonts/GalanoGrotesqueAlt-ExtraBoldItalic.woff') format('woff');
+  font-weight: 800;
+  font-style: italic;
+}
+
+
+@font-face {
+  font-family: 'GalanoGrotesqueAlt-BlackItalic';
+  src: url('assets/fonts/GalanoGrotesqueAlt-BlackItalic.woff2') format('woff2'),
+      url('assets/fonts/GalanoGrotesqueAlt-BlackItalic.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+}
+
+// Onramp
+@font-face {
+  font-family: 'ONRAMP';
+  src: url('assets/fonts/ONRAMP.woff2') format('woff2'),
+      url('assets/fonts/ONRAMP.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'semplicitaproltit';
-  src: url('assets/fonts/semplicitapro-ltit-webfont.woff2') format('woff2'),
-       url('assets/fonts/semplicitapro-ltit-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'semplicitapromedit';
-  src: url('assets/fonts/semplicitapro-medit-webfont.woff2') format('woff2'),
-       url('assets/fonts/semplicitapro-medit-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'semplicitapromedium';
-  src: url('assets/fonts/semplicitapro-medium-webfont.woff2') format('woff2'),
-       url('assets/fonts/semplicitapro-medium-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'semplicitaprosemibdit';
-  src: url('assets/fonts/semplicitapro-semibdit-webfont.woff2') format('woff2'),
-       url('assets/fonts/semplicitapro-semibdit-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'semplicitaprosemibold';
-  src: url('assets/fonts/semplicitapro-semibold-webfont.woff2') format('woff2'),
-       url('assets/fonts/semplicitapro-semibold-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'semplicitaproregular';
-  src: url('assets/fonts/semplicitapro-webfont.woff2') format('woff2'),
-       url('assets/fonts/semplicitapro-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-// Open Sans
-@font-face {
-  font-family: 'open_sansbold';
-  src: url('assets/fonts/opensans-bold-webfont.woff2') format('woff2'),
-       url('assets/fonts/opensans-bold-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'open_sansbold_italic';
-  src: url('assets/fonts/opensans-bolditalic-webfont.woff2') format('woff2'),
-       url('assets/fonts/opensans-bolditalic-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'open_sansextrabold';
-  src: url('assets/fonts/opensans-extrabold-webfont.woff2') format('woff2'),
-       url('assets/fonts/opensans-extrabold-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'open_sansextrabold_italic';
-  src: url('assets/fonts/opensans-extrabolditalic-webfont.woff2') format('woff2'),
-       url('assets/fonts/opensans-extrabolditalic-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'open_sansitalic';
-  src: url('assets/fonts/opensans-italic-webfont.woff2') format('woff2'),
-       url('assets/fonts/opensans-italic-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'open_sanslight';
-  src: url('assets/fonts/opensans-light-webfont.woff2') format('woff2'),
-       url('assets/fonts/opensans-light-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'open_sanslight_italic';
-  src: url('assets/fonts/opensans-lightitalic-webfont.woff2') format('woff2'),
-       url('assets/fonts/opensans-lightitalic-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'open_sansregular';
-  src: url('assets/fonts/opensans-regular-webfont.woff2') format('woff2'),
-       url('assets/fonts/opensans-regular-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'open_sanssemibold';
-  src: url('assets/fonts/opensans-semibold-webfont.woff2') format('woff2'),
-       url('assets/fonts/opensans-semibold-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'open_sanssemibold_italic';
-  src: url('assets/fonts/opensans-semibolditalic-webfont.woff2') format('woff2'),
-       url('assets/fonts/opensans-semibolditalic-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-// Oswald Regular
-@font-face {
-  font-family: 'oswald_regular';
-  src: url('assets/fonts/oswald-regular-webfont.woff2') format('woff2'),
-       url('assets/fonts/oswald-regular-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
 
 // SS Social
 @font-face {
