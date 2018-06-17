@@ -1,6 +1,5 @@
 header {
   @include full-box(flex);
-  background-color: $background;
   padding: 2em 0;
 
   .wrap {
@@ -9,72 +8,16 @@ header {
     justify-content: space-between;
   }
 
-  .menu {
+  .logo-display {
+    align-items: center;
     display: flex;
-    z-index: 2;
 
-    // Secondary Mobile - Phone & Below
-    @media screen and (max-width: $phone) {
-      align-items: center;
-      background-color: $background;
-      display: none;
-      flex-direction: column;
-      justify-content: center;
-      left: -10%;
-      padding: 3em 0 5em;
-      position: absolute;
-      top: 5em;
-      width: 120%;
-
-      &:after {
-        background: linear-gradient($background, rgba(22,21,56,0));
-        bottom: -24em;
-        content: "";
-        height: 24em;
-        left: 0;
-        position: absolute;
-        width: 100%;
-      }
-    } // End Phone & Below
-
-    a {
-      color: rgba($foreground, 0.6);
-      padding: 1em;
-
-      // Secondary Mobile - Phone & Below
-      @media screen and (max-width: $phone) {
-        font-family: $font-light;
-        font-size: 1.4em;
-      } // End Phone & Below
-
-      &:hover {
-        color: $callout;
-      }
+    .logo {
+      margin-right: 0.6em;
     }
 
-    li {
-      &, a {
-        @include better-box(flex);
-      }
-
-      &.current-menu-item {
-        a {
-          color: $foreground;
-        }
-      }
-    } // End li
-  } // End .menu
-} // End header
-
-body.home {
-  header {
-    background-color: rgba($background, 0.8);
-    position: absolute;
-    z-index: 4;
-
-    // Primary Mobile - Tablet & Below
-    @media screen and (max-width: $tablet) {
-      position: relative;
-    } // End Tablet & Below
+    .emoji-rating {
+      height: 0.6em;
+    }
   }
-}
+} // End header

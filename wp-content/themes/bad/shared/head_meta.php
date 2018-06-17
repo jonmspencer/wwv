@@ -38,12 +38,21 @@
 <link itemprop="image" href="<?php echo $image; ?>" />
 <link itemprop="url" href="<?php echo home_url(); ?>" />
 
+<!-- Ad Sense -->
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-2512797804447154",
+    enable_page_level_ads: true
+  });
+</script>
+
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114689049-1"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120963521-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'UA-114689049-1');
+  gtag('config', 'UA-120963521-1');
 </script>

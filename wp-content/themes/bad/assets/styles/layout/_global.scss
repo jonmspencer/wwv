@@ -3,25 +3,29 @@ html, body {
   min-height: 100%;
 }
 
-body {
+html {
   background-attachment: fixed;
-  background-color: $background;
-  background: linear-gradient(90deg, $background, $brand-alt);
-  background-position: top center;
+  background-blend-mode: screen;
+  background-position: center center;
   background-repeat: no-repeat;
-  background-size: 100vw;
+  background-size: cover;
+  background-color: $background;
+}
+
+body {
   color: $type;
   font-family: $font-stack;
   font-size: $base;
 
   // Primary Mobile - Tablet & Below
-  @media screen and (max-width: $tablet){
+  @media screen and (max-width: $tablet) {
     background-size: 180vh;
     font-size: $tablet-base;
   } // End Tablet & Below
 
   // Secondary Mobile - Phone & Below
-  @media screen and (max-width: $phone){
+  @media screen and (max-width: $phone) {
+    background-image: none;
     font-size: $phone-base;
   } // End Phone & Below
 } // End body

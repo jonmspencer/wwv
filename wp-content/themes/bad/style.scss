@@ -48,13 +48,13 @@ $phone: 680px;
 $nav-height: 3.05em;
 
 // Color
-$background: #161538;
+$background: #090516;
 $foreground: #FFFFFF;
 $foreground-alt: #F2F2FF;
 $border-color: rgba($foreground, 0.1);
-$brand: #DBDBFF;
+$brand: #eb4245;
 $brand-alt: #363475;
-$callout: #887AFF;
+$callout: #3737d3;
 $callout-hover:  lighten($callout, 10%);
 $default: #000000;
 $error: #C46A5E;
@@ -110,6 +110,7 @@ $border-radius: 0.250em;
 // @import "assets/styles/layout/table";
 
 // Header Structure
+@import "assets/styles/layout/header";
 
 // Footer Structure
 // @import "assets/styles/layout/footer";
@@ -123,6 +124,8 @@ $border-radius: 0.250em;
 
 // 2.0 MODULES - Page Specific
 // ----------------------------------------------------------------------------------------------------
+@import "assets/styles/modules/logo";
+@import "assets/styles/modules/emoji-rating";
 
 // Print
 // @import "assets/styles/base/print";

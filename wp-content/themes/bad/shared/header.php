@@ -1,13 +1,10 @@
 <header>
   <div class="wrap">
-    <?php
-      get_template_part("shared/modules/logo");
-      get_template_part('shared/modules/menu-button');
-      wp_nav_menu( array(
-        'menu' => 'Primary Navigation',
-        'theme_location' => 'Primary Navigation',
-        'container' => false
-      ) );
-    ?>
+    <span class="logo-display">
+      <a class="logo" href="<?php echo home_url(); ?>">
+        <?php echo get_bloginfo('title'); ?>
+      </a>
+      <span class="emoji-rating">😯😧😨😰😱</span>
+    </span>
   </div>
 </header>

@@ -17,8 +17,8 @@
     });
   }
 
-  function loadDeferredImg() {
-    var imageDefer = $('[data-behavior~="img-defer"]');
+  function loadDeferredImage() {
+    var imageDefer = $('[data-behavior~="defer-image"]');
     imageDefer.each(function() {
       var element = $(this),
       imageSource = element.attr("data-image");
@@ -29,6 +29,6 @@
 
   $(window).load(function() {
     loadDeferredContent();
-    loadDeferredImg();
+    loadDeferredImage();
   });
 })(jQuery);
