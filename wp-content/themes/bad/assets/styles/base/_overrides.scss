@@ -1,0 +1,6 @@
+.mobile-kill {
+  // Big Phone
+  @media screen and (max-width: $big-phone) {
+    display: none !important;
+  } // End Big-Phone
+}

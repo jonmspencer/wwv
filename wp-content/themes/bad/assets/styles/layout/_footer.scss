@@ -1,0 +1,11 @@
+footer {
+  .subfooter {
+    @include full-box(flex);
+    align-items: center;
+    border-top: 1px solid $border-color;
+    color: rgba($type-alt, 0.5);
+    font-size: 0.75em;
+    justify-content: center;
+    padding: 1.66em 5%;
+  }
+}

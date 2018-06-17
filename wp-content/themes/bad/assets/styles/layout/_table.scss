@@ -1,0 +1,36 @@
+table {
+  @include full-box(table);
+  border-collapse: collapse;
+  border-spacing: 0;
+  text-align: left;
+
+  &, thead, tr, th, td {
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+
+  tr {
+    display: table-row;
+
+    th, td {
+      padding: $half-space $micro-space;
+    }
+
+    th {
+      background-color: $background;
+      color: $foreground;
+      text-transform: capitalize;
+    } // End th
+
+    td {
+      font-size: 0.8em;
+    }
+  } // End tr
+
+  tbody {
+    tr {
+      border-bottom: 1px solid $border-color;
+    } // End tr
+  } // End tbody
+} // End table

@@ -1,0 +1,152 @@
+nav {
+  @include full-box();
+  background-color: rgba($callout, 0.925);
+  position: absolute;
+  top: 0;
+  z-index: 100;
+
+  // Big-Phone
+  @media screen and (max-width: $big-phone) {
+    height: $nav-height;
+  } // End Big-Phone
+
+  &.frozen {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+  }
+
+  .wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    // Primary Mobile - Tablet & Below
+    @media screen and (max-width: $tablet) {
+      justify-content: space-between;
+    } // End Tablet & Below
+
+    // Secondary Mobile - Phone & Below
+    @media screen and (max-width: $phone) {
+
+    } // End Phone & Below
+  }
+
+  a {
+    color: $foreground;
+    font-family: $heading-alt, $font-stack;
+    font-size: 1.6em;
+    float: left;
+    letter-spacing: 0.025em;
+    padding: $micro-space;
+    text-transform: lowercase;
+
+    // Big-Phone
+    @media screen and (max-width: $big-phone) {
+      font-size: 2em;
+    } // End Big-Phone
+
+    &:hover {
+      color: lighten(desaturate($callout, 20%), 30%);
+    }
+  } // End a
+
+  .menu {
+    &, li {
+      @include better-box;
+      float: left;
+    }
+
+    &#menu-primary-navigation {
+      // Big-Phone
+      @media screen and (max-width: $big-phone) {
+        background-color: rgba($callout, 0.925);
+        display: none;
+        left: 0;
+        margin: 0 -5.5%;
+        padding: $micro-space;
+        position: relative;
+        top: $nav-height;
+        width: 111%;
+      } // End Big-Phone
+
+      > li:first-of-type {
+        a {
+          // Big-Phone Inverse
+          @media screen and (min-width: $big-phone) {
+            padding-left: 0;
+          } // End Big-Phone Inverse
+        } // End a
+      }
+
+      li, .sub-menu {
+        // Big-Phone
+        @media screen and (max-width: $big-phone) {
+          @include full-box;
+          top: 0;
+        } // End Big-Phone
+      }
+    }
+
+    li {
+      ul.sub-menu {
+        background-color: rgba($callout, 0.925);
+        display: none;
+        left: 0;
+        min-width: 12em;
+        position: absolute;
+        top: $nav-height;
+
+        // Big-Phone
+        @media screen and (max-width: $big-phone) {
+          background-color: rgba($callout, 0);
+        } // End Big-Phone
+
+        li, a {
+          @include full-box;
+        }
+
+        > li {
+          + li {
+            a {
+              padding-top: 0;
+            }
+          }
+        }
+
+        a {
+          font-size: 1.4em;
+
+          // Big-Phone
+          @media screen and (max-width: $big-phone) {
+            padding-left: $minor-space;
+          } // End Big-Phone
+        } // End a
+      } // End .submenu
+    } // End li
+  } // End .menu
+}
+
+// Social Nav
+#menu-social-navigation {
+  @include better-box;
+  position: absolute;
+  right: 0;
+  top: 0.55em;
+  z-index: 1;
+
+  a {
+    font-family: $social;
+    font-size: 1em;
+    line-height: 0.8;
+  }
+
+  > li:last-of-type {
+    a {
+      // Big-Phone Inverse
+      @media screen and (min-width: $big-phone) {
+        padding-right: 0;
+      } // End Big-Phone Inverse
+    }
+  }
+}

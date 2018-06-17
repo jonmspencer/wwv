@@ -1,0 +1,39 @@
+@mixin bounce-animation-keyframes {
+	0%, 100% {
+    @include browser-prefix(transform, translateY(-0.24em));
+  }
+
+  60% {
+    @include browser-prefix(transform, translateY(0.44em));
+  }
+}
+
+@-webkit-keyframes bounce-animation {
+  @include bounce-animation-keyframes;
+}
+
+@keyframes bounce-animation {
+  @include bounce-animation-keyframes;
+}
+
+.scroll-down-button {
+  @include no-select;
+  cursor: pointer;
+  bottom: 4em;
+  left: 0;
+  letter-spacing: 0.2em;
+  position: absolute;
+  right: 0;
+  text-align: center;
+
+  svg {
+    @include full-box;
+    animation: bounce-animation 1.2s infinite;
+    height: $double-minor-space;
+    width: $double-minor-space;
+
+    & use {
+      fill: $foreground;
+    }
+  } // End svg
+} // End .scroll-down-button

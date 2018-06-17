@@ -1,0 +1,63 @@
+h1, h2, h3, h4, h5 {
+  @include full-box;
+  color: $background;
+  line-height: 120%;
+
+  &.alt {
+    color: $brand;
+  }
+}
+
+@mixin h1 {
+  font-family: $heading;
+  font-size: 2.813em;
+  color: $foreground;
+  margin-bottom: $minor-space;
+
+  // Secondary Mobile - Phone & Below
+  @media screen and (max-width: $phone) {
+    font-size: 2.4em;
+    letter-spacing: -0.01em;
+  } // End Phone & Below
+}
+
+h1 {
+  @include h1;
+}
+
+h2 {
+  font-family: $heading;
+  font-size: 1.875em;
+  line-height: 140%;
+  margin-bottom: $minor-space;
+
+  &.pseudo-h1 {
+    @include h1;
+  }
+}
+
+h3, h4 {
+  margin-bottom: $micro-space;
+}
+
+h3 {
+  @include larger;
+  font-family: $heading-alt;
+  font-size: 1.675em;
+}
+
+@mixin h4 {
+  font-family: $heading;
+  font-size: 1em;
+}
+
+h4 {
+  @include h4;
+}
+
+h5 {
+  font-family: $heading;
+  letter-spacing: 0.04em;
+  margin-bottom: $space;
+  text-transform: uppercase;
+}

@@ -1,0 +1,155 @@
+//0.0 BASE
+//  0.1 Variables
+//  0.2 Generics, Utilities, & Consolidations
+//  0.3 Resets
+//  0.4 Webfonts
+
+//1.0 LAYOUT
+//  1.1 Header Structure
+//  1.2 Footer Structure
+//  1.3 Headings
+//  1.4 Forms
+//  1.5 Lists
+//  1.6 Pagination
+
+//2.0 MODULES
+//  2.# Page Specific
+
+//3.0 RESPONSIVE
+//  3.1 Only Computer - No tablet or below
+//  3.2 Only Tablet & Above - No Mobile Phone
+//  3.3 Primary Mobile - Tablet & Below
+//  3.4 Secondary Mobile - Phone & Below
+//  3.5 iPad Only
+//  3.6 iPhone Only
+
+//4.0 Themes
+//  4.# If Applicable
+
+/*! WORDPRESS THEME INFO
+Theme Name: Bad
+Description: A custom WordPress theme for The World's Worst Videos
+Author: Jon Spencer
+Version: 1.0
+*/
+
+// 0.0 BASE
+// ----------------------------------------------------------------------------------------------------
+
+// 0.1 Variables
+
+// Responsive
+$wrap: 90%;
+$wrap-mobile: 85%;
+$large-screen: 1280px;
+$tablet: 1024px;
+$big-phone: 840px;
+$phone: 680px;
+$nav-height: 3.05em;
+
+// Color
+$background: #161538;
+$foreground: #FFFFFF;
+$foreground-alt: #F2F2FF;
+$border-color: rgba($foreground, 0.1);
+$brand: #DBDBFF;
+$brand-alt: #363475;
+$callout: #887AFF;
+$callout-hover:  lighten($callout, 10%);
+$default: #000000;
+$error: #C46A5E;
+$error-hover: lighten($error, 2.5%);
+$link: #4a638b;
+$type: #0F1D2B;
+$type-alt: #C6C6D7;
+$type-tert: #44435F;
+$type-quat: darken($type-alt, 15%);
+$shadow: rgba($background, 0.1);
+
+// Space
+$base: 16px;
+$tablet-base: 15px;
+$phone-base: 14px;
+
+$space: 2rem;
+$half-space: $space / 2;
+$double-space: $space * 2;
+$minor-space: 1.250rem;
+$double-minor-space: $minor-space * 2;
+$micro-space: 0.750rem;
+$nano-space: $micro-space / 2;
+
+// Fonts
+$font: "open_sansregular";
+$font-italic: "open_sansitalic";
+$font-light: "open_sanslight";
+$font-bold: "open_sansbold";
+$font-bold-italic: "open_sansbold_italic";
+$heading: "semplicitaprobold";
+$heading-alt: "semplicitapromedium";
+$heading-tert: "semplicitaprolight";
+$font-stack: $font, $font-light, Helvetica, Arial, sans-serif;
+$social: "SSSocialRegular";
+
+// Misc
+$animate-time: 0.2s;
+$border-radius: 0.250em;
+
+// Base Imports
+@import "assets/styles/base/utilities";
+@import "assets/styles/base/resets";
+@import "assets/styles/base/generics";
+@import "assets/styles/base/modbox";
+@import "assets/styles/base/fonts";
+
+// 1.0 LAYOUT - Global Structure
+// ----------------------------------------------------------------------------------------------------
+@import "assets/styles/layout/global";
+// @import "assets/styles/layout/menu-button";
+@import "assets/styles/layout/content";
+// @import "assets/styles/layout/table";
+
+// Header Structure
+
+// Footer Structure
+// @import "assets/styles/layout/footer";
+
+// Headings
+@import "assets/styles/layout/headings";
+
+// Forms
+@import "assets/styles/layout/forms";
+
+
+// 2.0 MODULES - Page Specific
+// ----------------------------------------------------------------------------------------------------
+
+// Print
+// @import "assets/styles/base/print";
+
+// Overrides
+@import "assets/styles/base/overrides";
+
+// Vendor
+@import "assets/styles/vendor/flickity";
+
+// 3.0 RESPONSIVE
+// ----------------------------------------------------------------------------------------------------
+
+// Only Computer - No tablet or below
+// @media screen and (min-width: $tablet) {} // End Only Computer
+
+// Only Tablet & Above - No Mobile Phone
+// @media screen and (min-width: $phone) {} // End Tablet & Above
+
+// Primary Mobile - Tablet & Below
+// @media screen and (max-width: $tablet) {} // End Tablet & Below
+
+// Secondary Mobile - Phone & Below
+// @media screen and (max-width: $phone) {} // End Phone & Below
+
+// iPad Only
+// @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {} // End iPad Only
+
+// iPhone Only
+// @media only screen and (max-device-width: 480px) {} // End iPhone Only

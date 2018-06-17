@@ -1,0 +1,60 @@
+a.menu-button {
+  @include animate;
+  background-color: transparent;
+  cursor: pointer;
+  display: none;
+  font-size: 1em;
+  padding: 1.4em 0;
+  z-index: 3;
+
+  // Secondary Mobile - Phone & Below
+  @media screen and (max-width: $phone) {
+    display: inline-block;
+  } // End Phone & Below
+
+  &.open {
+    .lines {
+      background-color: transparent;
+
+      &:before, &:after {
+        top: 0;
+      }
+
+      &:before {
+        @include browser-prefix(transform, rotate(45deg));
+      }
+
+      &:after {
+        @include browser-prefix(transform, rotate(-45deg));
+      }
+    } // END .lines
+  } // END .menu-button.open
+
+  .lines {
+    display: block;
+    position: relative;
+
+    &, &:before, &:after {
+      @include animate;
+      background-color: $foreground;
+      border-radius: $border-radius;
+      height: 3px;
+      width: 1.75em;
+    }
+
+    &:before, &:after {
+      content: '';
+      display: inline-block;
+      left: 0;
+      position: absolute;
+    }
+
+    &:before {
+      top: 6px;
+    }
+
+    &:after {
+      top: -6px;
+    }
+  } // END .lines
+} // END .menu-button
