@@ -1,6 +1,6 @@
 <?php
   $full_title = get_bloginfo('name') . " - " . get_bloginfo('description');
-  $image = get_template_directory_uri() . "/assets/images/hero-1.jpg";
+  $image = get_template_directory_uri() . "/assets/images/wwv-meta-image.png";
 ?>
 
 <title itemprop='name'><?php echo $full_title; ?> | <?php echo the_title(); ?></title>

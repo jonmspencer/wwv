@@ -1,9 +1,9 @@
 <?php
 
   // Front Page
-  function render_home_page() {
+  function render_front_page() {
     get_header();
-
+    get_template_part("shared/hero");
 
     // Footer
     get_footer();

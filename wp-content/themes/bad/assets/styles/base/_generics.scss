@@ -85,7 +85,7 @@
 } // End wrap
 
 .wrap {
-  @include wrap;
+  @include wrap($wrap, 62em);
 }
 
 .inner-wrap {
@@ -307,6 +307,14 @@ a.cta-alt {
     position: absolute;
   }
 } // End .iframe-container
+
+.video-placeholder {
+  @include full-box;
+  background-size: cover;
+  background-position: center center;
+  height: 0;
+  padding-bottom: 56.25%;
+}
 
 iframe {
   @include full-box;

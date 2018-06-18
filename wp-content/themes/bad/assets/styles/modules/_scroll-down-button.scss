@@ -1,10 +1,10 @@
 @mixin bounce-animation-keyframes {
 	0%, 100% {
-    @include browser-prefix(transform, translateY(-0.24em));
+    @include browser-prefix(transform, translateY(-0.34em));
   }
 
   60% {
-    @include browser-prefix(transform, translateY(0.44em));
+    @include browser-prefix(transform, translateY(0.54em));
   }
 }
 
@@ -17,22 +17,24 @@
 }
 
 .scroll-down-button {
+  @include better-box;
   @include no-select;
+  clear: both;
   cursor: pointer;
-  bottom: 4em;
-  left: 0;
-  letter-spacing: 0.2em;
-  position: absolute;
-  right: 0;
-  text-align: center;
 
   svg {
     @include full-box;
     animation: bounce-animation 1.2s infinite;
-    height: $double-minor-space;
-    width: $double-minor-space;
+    height: 3.5em;
+    margin: 3.5em 0;
+    width: 3.5em;
 
-    & use {
+    // Secondary Mobile - Phone & Below
+    @media screen and (max-width: $phone) {
+      margin: 2em 0;
+    } // End Phone & Below
+
+    &, use {
       fill: $foreground;
     }
   } // End svg

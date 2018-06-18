@@ -10,9 +10,14 @@ h1, h2, h3, h4, h5 {
 
 @mixin h1 {
   font-family: $heading;
-  font-size: 2.813em;
+  font-size: 4em;
   color: $foreground;
   margin-bottom: $minor-space;
+
+  // Custom
+  @media screen and (max-width: 1080px) {
+    font-size: 5.8vw;
+  } // End Custom
 
   // Secondary Mobile - Phone & Below
   @media screen and (max-width: $phone) {

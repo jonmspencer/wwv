@@ -39,7 +39,6 @@
   font-style: italic;
 }
 
-
 @font-face {
   font-family: 'GalanoGrotesqueAlt-BlackItalic';
   src: url('assets/fonts/GalanoGrotesqueAlt-BlackItalic.woff2') format('woff2'),
@@ -57,6 +56,14 @@
   font-style: normal;
 }
 
+// Hunter River
+@font-face {
+  font-family: 'HunterRiver';
+  src: url('assets/fonts/hunterriver-regular-webfont.woff2') format('woff2'),
+       url('assets/fonts/hunterriver-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
 // SS Social
 @font-face {

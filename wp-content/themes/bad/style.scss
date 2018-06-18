@@ -82,9 +82,9 @@ $nano-space: $micro-space / 2;
 // Fonts
 $font: "GalanoGrotesqueAlt-Medium";
 $font-italic: "GalanoGrotesqueAlt-MediumItalic";
-// $font-light: "open_sanslight";
 $font-bold: "GalanoGrotesqueAlt-ExtraBold";
 $font-bold-italic: "GalanoGrotesqueAlt-ExtraBoldItalic";
+$font-alt: "HunterRiver";
 $heading: "GalanoGrotesqueAlt-Black";
 $heading-italic: "GalanoGrotesqueAlt-BlackItalic";
 $heading-alt: "ONRAMP";
@@ -121,11 +121,12 @@ $border-radius: 0.250em;
 // Forms
 @import "assets/styles/layout/forms";
 
-
 // 2.0 MODULES - Page Specific
 // ----------------------------------------------------------------------------------------------------
+@import "assets/styles/modules/scroll-down-button";
 @import "assets/styles/modules/logo";
 @import "assets/styles/modules/emoji-rating";
+@import "assets/styles/modules/hero";
 
 // Print
 // @import "assets/styles/base/print";

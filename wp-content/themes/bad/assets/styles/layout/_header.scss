@@ -1,6 +1,7 @@
 header {
   @include full-box(flex);
   padding: 2em 0;
+  z-index: 1;
 
   .wrap {
     align-items: center;
@@ -12,8 +13,20 @@ header {
     align-items: center;
     display: flex;
 
+    // Secondary Mobile - Phone & Below
+    @media screen and (max-width: $phone) {
+      align-items: flex-start;
+      flex-direction: column-reverse;
+      justify-content: flex-start;
+    } // End Phone & Below
+
     .logo {
       margin-right: 0.6em;
+
+      // Secondary Mobile - Phone & Below
+      @media screen and (max-width: $phone) {
+        margin: 0.4em 0 0;
+      } // End Phone & Below
     }
 
     .emoji-rating {
@@ -21,3 +34,9 @@ header {
     }
   }
 } // End header
+
+body.home {
+  header {
+    margin-top: 6em;
+  }
+}

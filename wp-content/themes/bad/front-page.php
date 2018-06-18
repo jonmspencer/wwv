@@ -1,3 +1,1 @@
-<?php
-  render_home_page();
-?>
+<?php render_front_page(); ?>

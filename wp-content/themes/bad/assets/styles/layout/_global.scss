@@ -32,8 +32,7 @@ body {
 
 // Section
 @mixin section {
-  @include full-box();
-  background-color: $foreground;
+  @include full-box(flex);
   padding: 6em 0;
 }
 
@@ -50,10 +49,6 @@ section {
 
 p {
   @include p;
-}
-
-.note {
-  font-size: 0.875em;
 }
 
 strong {
