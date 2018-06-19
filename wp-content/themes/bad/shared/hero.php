@@ -13,10 +13,25 @@
       <br>
       <?php get_template_part("shared/modules/scroll-down-button"); ?>
     </div>
-    <div class="hero-video">
-      <a class="video-placeholder" data-behavior="video-trigger" style="background-image: url('https://img.youtube.com/vi/b921YazkuCg/maxresdefault.jpg')">
-        <svg><use xlink:href="#play-button" /></svg>
-      </a>
-    </div>
+
+    <?php
+      $featured_video_loop = new WP_Query(
+        array(
+          'post_type' => 'post',
+          'posts_per_page' => 1,
+          'category_name' => 'featured',
+          // 'paged' => $paged
+        )
+      );
+      if( $featured_video_loop->have_posts() ) {
+        while ( $featured_video_loop->have_posts() ) : $featured_video_loop->the_post();
+        if(get_post_meta( get_the_ID(), 'post_youtube_video_id', true )) {
+          $youtube_video_id = get_post_meta( get_the_ID(), 'post_youtube_video_id', true );
+          include(locate_template("shared/video/hero-video.php"));
+          unset($youtube_video_id);
+        }
+        endwhile;
+      }
+    ?>
   </div>
 </section>

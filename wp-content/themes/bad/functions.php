@@ -44,5 +44,5 @@ if ( file_exists( dirname( __FILE__ ) . '/inc/vendor/cmb2/init.php' ) ) {
 require('inc/vendor/cmb2_address.php');
 
 // Metaboxes
-// Home
-require('inc/functions/metaboxes/home-meta.php');
+// Post
+require('inc/functions/metaboxes/post-meta.php');

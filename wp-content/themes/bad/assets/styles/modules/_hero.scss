@@ -2,13 +2,12 @@
   @include full-box(flex);
   align-items: center;
   padding-top: 0;
-  overflow: hidden;
 
   &:before {
     color: $callout;
     content: "WTF!?";
     font-family: $font-alt;
-    font-size: 26em;
+    font-size: 36vw;
     opacity: 0.33;
     position: absolute;
     transform: rotate(-10deg);
