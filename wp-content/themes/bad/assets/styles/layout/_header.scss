@@ -30,6 +30,7 @@ header {
     }
 
     .emoji-rating {
+      display: none;
       height: 0.6em;
     }
   }
@@ -38,5 +39,11 @@ header {
 body.home {
   header {
     margin-top: 6em;
+
+    .logo-display {
+      .emoji-rating {
+        display: inline-block;
+      }
+    }
   }
 }

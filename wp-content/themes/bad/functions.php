@@ -23,6 +23,7 @@ require('inc/functions/taxonomies/team-tag.php');
 
 // Views
 require('inc/functions/views/page-views.php');
+require('inc/functions/views/post-views.php');
 
 // Custom Post Types
 // require('inc/functions/cpt/team-cpt.php');
