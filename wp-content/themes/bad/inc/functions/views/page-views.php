@@ -5,6 +5,10 @@
     get_header();
     get_template_part("shared/hero");
 
+    // $category = "genuine-foolishness";
+    include(locate_template("shared/video/video-slider.php"));
+    // unset($category);
+
     // Footer
     get_footer();
   }

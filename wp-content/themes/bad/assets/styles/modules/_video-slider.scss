@@ -1,0 +1,61 @@
+.slider {
+
+  button {
+    &.flickity-prev-next-button {
+      @include vertical-center;
+      background-color: rgba($brand, 0);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: 50%;
+      border: none;
+      border-radius: 100%;
+      height: 6em;
+      padding: 0;
+      text-indent: -9999em;
+      width: 4em;
+      z-index: 8;
+
+      svg {
+        stroke: $foreground;
+        stroke-width: 2;
+      }
+
+      &.previous {
+        background-image: url("assets/images/icon/arrow-left.svg");
+        left: calc(5% - 2em);
+      }
+
+      &.next {
+        background-image: url("assets/images/icon/arrow-right.svg");
+        right: calc(5% - 2em);
+      }
+    }
+  }
+
+  .video-slide {
+    background-color: $background;
+    height: 32vw;
+    margin-right: $nano-space;
+    max-height: 14em;
+    max-width: 32em;
+    width: 28%;
+
+    &-image {
+      @include animate;
+      @include video-baseline;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+
+      .play-button {
+        height: 4em;
+        width: 4em;
+      }
+    }
+  }
+}

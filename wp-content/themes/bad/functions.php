@@ -33,8 +33,8 @@ require('inc/functions/views/post-views.php');
 // Specifics
 // Slider
 require('inc/functions/slider.php');
-// Team
-require('inc/functions/team.php');
+// Video
+require('inc/functions/video.php');
 
 // CMB2 INIT
 if ( file_exists( dirname( __FILE__ ) . '/inc/vendor/cmb2/init.php' ) ) {
