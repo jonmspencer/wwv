@@ -25,10 +25,8 @@
 
 
       a {
-        @include bold-link($brand, invert($brand));
-        //
+        @include bold-link($callout, invert($callout));
         color: $foreground;
-        // text-transform: uppercase;
       }
     }
   }

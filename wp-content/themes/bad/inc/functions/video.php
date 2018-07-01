@@ -1,18 +1,18 @@
 <?php
 
-  function render_team($count, $category = null) {
+  function render_video_collection($category = null, $count = 14) {
     $loop = new WP_Query(
       array(
-        'post_type' => 'team',
-        'order' => 'ASC',
+        'order' => 'DESC',
         'posts_per_page' => $count,
-        'team-tag' => $category,
+        'category_name' => $category,
       )
     );
 
     if ( $loop->have_posts() ) {
       while ( $loop->have_posts() ) : $loop->the_post();
-        include(locate_template("team/team-member.php"));
+        $youtube_video_id = get_post_meta( get_the_ID(), 'post_youtube_video_id', true );
+        include(locate_template("shared/video/video-slide.php"));
       endwhile;
     }
 

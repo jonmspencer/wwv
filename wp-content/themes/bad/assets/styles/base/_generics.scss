@@ -308,7 +308,50 @@ a.cta-alt {
   }
 } // End .iframe-container
 
+@mixin video-baseline {
+  opacity: 0.75;
+
+  &:before {
+    background: rgba($callout, 0.5);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  svg {
+    @include vertical-center;
+    height: 6em;
+    opacity: 0;
+    position: absolute;
+    right: 10em;
+    width: 6em;
+    z-index: 2;
+
+    // Secondary Mobile - Phone & Below
+    @media screen and (max-width: $phone) {
+      height: 5em;
+      width: 5em;
+    } // End Phone & Below
+
+    &, use {
+      fill: $foreground;
+    }
+  }
+
+  &:hover {
+    opacity: 1;
+
+    svg {
+      opacity: 1;
+    }
+  }
+}
+
 .video-placeholder {
+  @include video-baseline;
   @include full-box;
   background-size: cover;
   background-position: center center;
