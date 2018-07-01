@@ -1,0 +1,48 @@
+.video-layout {
+  padding-bottom: 4em;
+
+  &-content {
+    @include full-box();
+  }
+
+  &-overview {
+    .meta {
+      @include full-box;
+      color: $type-quat;
+
+      &-group {
+        margin-right: 1em;
+
+        &:last-of-type {
+          margin: 0;
+        }
+      }
+
+      &-value {
+        color: $foreground;
+        font-family: $font-bold;
+      }
+
+
+      a {
+        @include bold-link($brand, invert($brand));
+        //
+        color: $foreground;
+        // text-transform: uppercase;
+      }
+    }
+  }
+
+  &-detail {
+    @include full-box(flex);
+
+    .video-layout-content {
+      width: 60%;
+    }
+
+    .video-layout-related {
+      width: 40%;
+    }
+  }
+
+} // End .video-layout

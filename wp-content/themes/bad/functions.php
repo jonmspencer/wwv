@@ -11,6 +11,8 @@ require('inc/functions/login.php');
 require('inc/functions/menus.php');
 // Page
 require('inc/functions/page.php');
+// Post
+require('inc/functions/post.php');
 // Remove Posts
 // require('inc/functions/remove_posts.php');
 // Remove Comments
